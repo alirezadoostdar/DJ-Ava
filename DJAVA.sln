@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DJ_AVA", "DJ_AVA\DJ_AVA.csproj", "{F7ADA5B9-5267-496D-8C78-B1B753331AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DJAVA.Domain", "DJAVA.Domain\DJAVA.Domain.csproj", "{B9F90D97-8E54-4CB2-A69B-8E11EC236267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DJAVA.Domain", "DJAVA.Domain\DJAVA.Domain.csproj", "{B9F90D97-8E54-4CB2-A69B-8E11EC236267}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0463A4A0-4925-45CF-9D7D-8279285A7839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{CC712F63-E2E2-45A5-A356-D02A86A00449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC712F63-E2E2-45A5-A356-D02A86A00449} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5869A219-F720-452F-AFD6-A5625AD3732C}
