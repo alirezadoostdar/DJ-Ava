@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DJ_AVA", "DJ_AVA\DJ_AVA.csproj", "{F7ADA5B9-5267-496D-8C78-B1B753331AC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DJAVA.Domain", "DJAVA.Domain\DJAVA.Domain.csproj", "{B9F90D97-8E54-4CB2-A69B-8E11EC236267}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0463A4A0-4925-45CF-9D7D-8279285A7839}"
@@ -19,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persentation", "Persentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Domain", "src\core\DjAva.Domain\DjAva.Domain.csproj", "{CAFCAB4B-9100-4083-9D20-92AD0F707C48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Infrastructure.Persistence", "src\Infrustructure\DjAva.Infrustructure.Persistence\DjAva.Infrastructure.Persistence.csproj", "{05FCC8EA-4441-426C-91EB-213688C20B0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,14 +29,14 @@ Global
 		{F7ADA5B9-5267-496D-8C78-B1B753331AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7ADA5B9-5267-496D-8C78-B1B753331AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7ADA5B9-5267-496D-8C78-B1B753331AC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B9F90D97-8E54-4CB2-A69B-8E11EC236267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9F90D97-8E54-4CB2-A69B-8E11EC236267}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9F90D97-8E54-4CB2-A69B-8E11EC236267}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9F90D97-8E54-4CB2-A69B-8E11EC236267}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CAFCAB4B-9100-4083-9D20-92AD0F707C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CAFCAB4B-9100-4083-9D20-92AD0F707C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAFCAB4B-9100-4083-9D20-92AD0F707C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAFCAB4B-9100-4083-9D20-92AD0F707C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05FCC8EA-4441-426C-91EB-213688C20B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FCC8EA-4441-426C-91EB-213688C20B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05FCC8EA-4441-426C-91EB-213688C20B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05FCC8EA-4441-426C-91EB-213688C20B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +46,7 @@ Global
 		{356B6575-BA0A-4A1C-92DD-B4AE20C80D2F} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
 		{AA301E8C-BF9E-4F30-B930-B6A5F9703273} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
 		{CAFCAB4B-9100-4083-9D20-92AD0F707C48} = {CC712F63-E2E2-45A5-A356-D02A86A00449}
+		{05FCC8EA-4441-426C-91EB-213688C20B0C} = {356B6575-BA0A-4A1C-92DD-B4AE20C80D2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5869A219-F720-452F-AFD6-A5625AD3732C}
