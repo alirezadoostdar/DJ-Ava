@@ -18,4 +18,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DjAva.Infrastructure\DjAva.Infrastructure.csproj" />
+    <ProjectReference Include="..\src\Core\DjAva.Application\DjAva.Application.csproj" />
+    <ProjectReference Include="..\src\Infrustructure\DjAva.Infrustructure.Persistence\DjAva.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

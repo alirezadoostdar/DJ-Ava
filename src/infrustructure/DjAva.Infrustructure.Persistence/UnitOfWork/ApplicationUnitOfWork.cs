@@ -1,39 +1,40 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DjAva.Application.Common;
+using Microsoft.EntityFrameworkCore;
 
-namespace DjAva.Infrastructure.Persistence.UnitOfWork;
+namespace DjAva.Infrastructure.Persistence.Context;
 
 public partial class ApplicationUnitOfWork(ApplicationDbContext applicationDbContext)
-	: IApplicationUnitOfWork
+    : IApplicationUnitOfWork
 {
-	private readonly ApplicationDbContext _context = applicationDbContext;
+    private readonly ApplicationDbContext _context = applicationDbContext;
 
-	public async Task<Result> SaveChangesAsync(CancellationToken cancellationToken = default)
-	{
-		try
-		{
-			await _context.SaveChangesAsync(cancellationToken);
-			return Result.Success();
-		}
-		catch (DbUpdateConcurrencyException e)
-		{
-			//If you want to do something
-			return Result.Failure(e.Message);
-		}
-		catch (DbUpdateException e)
-		{
-			return Result.Failure(e.Message);
-		}
-	}
+    public async Task<Result> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            await _context.SaveChangesAsync(cancellationToken);
+            return Result.Success();
+        }
+        catch (DbUpdateConcurrencyException e)
+        {
+            //If you want to do something
+            return Result.Failure(e.Message);
+        }
+        catch (DbUpdateException e)
+        {
+            return Result.Failure(e.Message);
+        }
+    }
 
-	public void Dispose()
-	{
-		_context.Dispose();
-		GC.SuppressFinalize(this);
-	}
+    public void Dispose()
+    {
+        _context.Dispose();
+        GC.SuppressFinalize(this);
+    }
 
-	public async ValueTask DisposeAsync()
-	{
-		await _context.DisposeAsync();
-		GC.SuppressFinalize(this);
-	}
+    public async ValueTask DisposeAsync()
+    {
+        await _context.DisposeAsync();
+        GC.SuppressFinalize(this);
+    }
 }

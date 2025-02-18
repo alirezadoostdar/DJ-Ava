@@ -1,5 +1,6 @@
-﻿using DjAva.Infrastructure.Persistence.Interseptors;
-using DjAva.Infrastructure.Persistence.UnitOfWork;
+﻿using DjAva.Application.Common;
+using DjAva.Infrastructure.Persistence.Context;
+using DjAva.Infrastructure.Persistence.Interseptors;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

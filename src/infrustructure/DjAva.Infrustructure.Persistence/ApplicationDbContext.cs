@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace DjAva.Infrastructure.Persistence;
 
-internal class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 	: DbContext(options)
 {
 	protected override void OnModelCreating(ModelBuilder modelBuilder)

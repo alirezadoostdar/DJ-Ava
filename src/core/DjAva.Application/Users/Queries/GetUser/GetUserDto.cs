@@ -2,5 +2,5 @@
 
 namespace DjAva.Application.Users.Queries.GetUser;
 
-public record GetUserDto(Guid Id, Gender Gender, string Email)
+public record GetUserDto(Guid Id, Gender Gender, string Email);
 

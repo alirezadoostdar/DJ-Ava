@@ -15,13 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persentation", "Persentation", "{AA301E8C-BF9E-4F30-B930-B6A5F9703273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Domain", "src\core\DjAva.Domain\DjAva.Domain.csproj", "{CAFCAB4B-9100-4083-9D20-92AD0F707C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Domain", "src\core\DjAva.Domain\DjAva.Domain.csproj", "{CAFCAB4B-9100-4083-9D20-92AD0F707C48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Infrastructure.Persistence", "src\Infrustructure\DjAva.Infrustructure.Persistence\DjAva.Infrastructure.Persistence.csproj", "{05FCC8EA-4441-426C-91EB-213688C20B0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Infrastructure.Persistence", "src\Infrustructure\DjAva.Infrustructure.Persistence\DjAva.Infrastructure.Persistence.csproj", "{05FCC8EA-4441-426C-91EB-213688C20B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Infrastructure", "DjAva.Infrastructure\DjAva.Infrastructure.csproj", "{D5568C4B-F496-4C4D-905B-D4F39FD32D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Infrastructure", "DjAva.Infrastructure\DjAva.Infrastructure.csproj", "{D5568C4B-F496-4C4D-905B-D4F39FD32D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.Application", "src\Core\DjAva.Application\DjAva.Application.csproj", "{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Application", "src\Core\DjAva.Application\DjAva.Application.csproj", "{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.API", "src\Persentation\DjAva.API\DjAva.API.csproj", "{774C6349-A7D0-4D75-8E5E-68A9020906AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,11 +51,16 @@ Global
 		{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774C6349-A7D0-4D75-8E5E-68A9020906AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774C6349-A7D0-4D75-8E5E-68A9020906AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774C6349-A7D0-4D75-8E5E-68A9020906AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774C6349-A7D0-4D75-8E5E-68A9020906AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F7ADA5B9-5267-496D-8C78-B1B753331AC8} = {AA301E8C-BF9E-4F30-B930-B6A5F9703273}
 		{CC712F63-E2E2-45A5-A356-D02A86A00449} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
 		{356B6575-BA0A-4A1C-92DD-B4AE20C80D2F} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
 		{AA301E8C-BF9E-4F30-B930-B6A5F9703273} = {F934D5A5-9AD3-4E95-B7BB-1004EF30CA15}
@@ -61,6 +68,7 @@ Global
 		{05FCC8EA-4441-426C-91EB-213688C20B0C} = {356B6575-BA0A-4A1C-92DD-B4AE20C80D2F}
 		{D5568C4B-F496-4C4D-905B-D4F39FD32D6B} = {356B6575-BA0A-4A1C-92DD-B4AE20C80D2F}
 		{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780} = {CC712F63-E2E2-45A5-A356-D02A86A00449}
+		{774C6349-A7D0-4D75-8E5E-68A9020906AA} = {AA301E8C-BF9E-4F30-B930-B6A5F9703273}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5869A219-F720-452F-AFD6-A5625AD3732C}
