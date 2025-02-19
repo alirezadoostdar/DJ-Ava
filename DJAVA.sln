@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Infrastructure", "DjA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.Application", "src\Core\DjAva.Application\DjAva.Application.csproj", "{3EC0C2DE-DBFE-4A3F-A43C-4EC614344780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjAva.API", "src\Persentation\DjAva.API\DjAva.API.csproj", "{774C6349-A7D0-4D75-8E5E-68A9020906AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DjAva.API", "src\Persentation\DjAva.API\DjAva.API.csproj", "{774C6349-A7D0-4D75-8E5E-68A9020906AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
